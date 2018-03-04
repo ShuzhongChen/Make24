@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/show_me"
+            android:icon="@drawable/ic_question_answer_black_18dp"
+            android:title="Show Me" />
+        <item
+            android:id="@+id/assign_num"
+            android:icon="@drawable/ic_format_list_numbered_black_18dp"
+            android:title="Assign Numbers" />
+    </group>
+</menu>
