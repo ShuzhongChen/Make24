@@ -280,36 +280,56 @@ public class MainActivity extends AppCompatActivity {
         num_btn1 = (Button)findViewById(R.id.num_btn1);
         num_btn1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                btnHandler((char)(n1 + '0'));
-                btnStack.add('1');
-                num_btn1.setEnabled(false);
+                if (!stack.empty() && Character.isDigit(stack.peek())) {
+                    Toast.makeText(MainActivity.this, "No consecutive number!",
+                            Toast.LENGTH_LONG).show();
+                } else {
+                    btnHandler((char)(n1 + '0'));
+                    btnStack.add('1');
+                    num_btn1.setEnabled(false);
+                }
             }
         });
 
         num_btn2 = (Button)findViewById(R.id.num_btn2);
         num_btn2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                btnHandler((char)(n2 + '0'));
-                btnStack.add('2');
-                num_btn2.setEnabled(false);
+                if (!stack.empty() && Character.isDigit(stack.peek())) {
+                    Toast.makeText(MainActivity.this, "No consecutive number!",
+                            Toast.LENGTH_LONG).show();
+                } else {
+                    btnHandler((char) (n2 + '0'));
+                    btnStack.add('2');
+                    num_btn2.setEnabled(false);
+                }
             }
         });
 
         num_btn3 = (Button)findViewById(R.id.num_btn3);
         num_btn3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                btnHandler((char)(n3 + '0'));
-                btnStack.add('3');
-                num_btn3.setEnabled(false);
+                if (!stack.empty() && Character.isDigit(stack.peek())) {
+                    Toast.makeText(MainActivity.this, "No consecutive number!",
+                            Toast.LENGTH_LONG).show();
+                } else {
+                    btnHandler((char) (n3 + '0'));
+                    btnStack.add('3');
+                    num_btn3.setEnabled(false);
+                }
             }
         });
 
         num_btn4 = (Button)findViewById(R.id.num_btn4);
         num_btn4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                btnHandler((char)(n4 + '0'));
-                btnStack.add('4');
-                num_btn4.setEnabled(false);
+                if (!stack.empty() && Character.isDigit(stack.peek())) {
+                    Toast.makeText(MainActivity.this, "No consecutive number!",
+                            Toast.LENGTH_LONG).show();
+                } else {
+                    btnHandler((char) (n4 + '0'));
+                    btnStack.add('4');
+                    num_btn4.setEnabled(false);
+                }
             }
         });
 
